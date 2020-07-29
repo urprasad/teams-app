@@ -17,6 +17,8 @@
   },
   "homepage": "https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-nodejs",
   "dependencies": {
+    "@angular/core": "^10.0.5",
+    "@angular/http": "^7.2.16",
     "@babel/polyfill": "^7.8.7",
     "botbuilder": "^4.8.0",
     "config": "^1.28.1",

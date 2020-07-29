@@ -10,6 +10,7 @@
             setTheme(context.theme);
         }
     });
+  
 
     // Handle theme changes
     microsoftTeams.registerOnThemeChangeHandler(function (theme) {
@@ -43,6 +44,7 @@
                 microsoftTeams.settings.setValidityState(
                     selectedTab === 'first' || selectedTab === 'second'
                 );
+                setVisioFileInIFrame();
             };
         }
     });
@@ -60,8 +62,8 @@
     function createTabUrl() {
         var tabChoice = document.getElementById('tabChoice');
         var selectedTab = tabChoice[tabChoice.selectedIndex].value;
-
-        return (
+     //   return "https://urprasad-ts3.fareast.corp.microsoft.com/th/FrameWAC.aspx?Fi=anonymous%7EDocument2%2Evsdx&Action=Edit&Application=Visio&transport=wopi&wachost=urprasad-ts3.fareast.corp.microsoft.com&uiembed=1";
+       return (
             window.location.protocol +
             '//' +
             window.location.host +
@@ -69,4 +71,5 @@
             selectedTab
         );
     }
+ 
 })();
